@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="stylesheet" href="css/bootstrap.min.css">  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">  
+</head>
+<body>
+
+  
+
+<div class="container-fluid padding-top">
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="#" class="logo"><img src="img/BI_logo.jpg" alt="bi logo" class="img-responsive" /></a></div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+          <h2 class="your-experience">Your experience with Pradaxa<sup>®</sup></h2>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><img src="img/Pradaxa-Trusworthy-Logo.jpg" alt="bi logo" class="img-responsive pull-right" /></div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+          <img src="img/11-Years-logo.png" alt="bi logo" class="img-responsive pull-right" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h3 class="Pradaxa-is-trustworlth">
+             Pradaxa is <span class="red">Trustworthy Partner</span> to me and my patient because
+          </h3>
+        </div>
+    </div>
+    <form>
+      <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="form-group margin-bottom-25">
+                <!-- <label for="notes">Comment:</label> -->
+                <textarea class="form-control" rows="5" id="notes"></textarea>
+              </div>
+          </div>
+      </div>
+      <div class="row">        
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <table class="borderless">
+                  <tr>
+                    <!--left-->
+                    <td>
+                      <table class="inner-table">
+                         <tr>
+                            <td><img src="img/Name-Logo.jpg" alt="name img" class="img-resposive" /></td>
+                            <td><input type="text" class="form-control" placeholder="Name"></td>
+                         </tr>
+                         <tr>
+                            <td><img src="img/Date-Logo.jpg" alt="date img" class="img-resposive" /></td>
+                            <td><input type="text" class="form-control" placeholder="Date"></td>
+                         </tr>
+                         <tr>
+                            <td><img src="img/Place-logo.jpg" alt="name img" class="img-resposive" /></td>
+                            <td><input type="text" class="form-control" placeholder="Location"></td>
+                         </tr>
+                      </table>
+                    </td>
+                    <!--left-->
+                    <!--right-->
+                     <td style="vertical-align: top;">
+                        <table class="inner-table">
+                            <tr>
+                                <td><img src="img/Name-Logo.jpg" alt="name img" class="img-resposive" /></td>
+                                <td>
+                                    <!-- <textarea class="form-control" rows="8" id="signature"></textarea> -->
+                                    <canvas id="colors_sketch" ></canvas>
+                                </td>
+                             </tr>
+                        </table>
+                     </td>
+                    <!--right-->
+                  </tr>
+              </table>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+              <button type="submit" class="btn btn-default submit-btn">Submit</button> 
+          </div>
+      </div>
+    </form>
+</div>
+
+<script src="https://cdn.rawgit.com/mobomo/sketch.js/master/lib/sketch.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function () {
+      $('#colors_sketch').sketch();
+      $('#txtDt').val(new Date().toLocaleString());
+  });
+
+  function saveMe() {
+      console.log('xxxx');
+      let canvas = document.getElementById('colors_sketch');
+      console.log(canvas.toDataURL());
+      let img = document.getElementById('imgsign');
+      let divmsg = document.getElementById('divmsg');
+      divmsg.innerHTML = document.getElementById('txtName').value + ' ---' + document.getElementById('txtDt').value+ ' ---' + document.getElementById('txtPlace').value;
+      img.src = canvas.toDataURL();
+  }
+</script>
+
+
+</body>
+</html>

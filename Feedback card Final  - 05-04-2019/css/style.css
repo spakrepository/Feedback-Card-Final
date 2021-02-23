@@ -1,0 +1,97 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.your-experience {
+    background-color:#0f5288;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 0;
+    margin-top:42px; 
+}
+
+.Pradaxa-is-trustworlth {
+    color:#0f5288;
+}
+
+.red {
+    color: rgb(197, 33, 53);
+}
+
+.logo {
+    margin-top:43px;
+    display: inline-block;
+
+}
+
+.Pradaxa-is-trustworlth {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+table {
+    width:100%;
+    height: auto;
+}
+
+.inner-table > tbody > tr >td:first-child {
+    width: 50px;
+    height: auto;
+    vertical-align: top;
+}
+
+.margin-bottom-25 {
+    margin-bottom: 25px;
+}
+
+.form-control {
+   margin-bottom: 30px;
+}
+.padding-top{
+    padding-top: 25px;
+}
+
+.submit-btn {
+    margin-top: 15px;
+    background: #0f5288;
+    color:#fff;
+    border:2px solid #0f5288;
+    transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    width:100%;
+    padding: 15px 0;
+}
+
+.submit-btn:hover {
+    color: #0f5288;
+    border:2px solid #0f5288;
+    background: transparent;
+}
+
+.tools a
+        {
+            text-decoration: none;
+        }
+        #colors_sketch
+        {
+            border: 1px solid #ccc;
+        }
+
+canvas {
+    border-radius: 4px;
+    height: 100px;
+    width: 100%;
+}
+
+
+.thank-you {
+    margin-top:50px;
+    color: #0f5288;
+}
+
